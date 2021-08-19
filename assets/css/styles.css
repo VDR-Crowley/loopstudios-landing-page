@@ -35,6 +35,7 @@ footer {
 
 header div.container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-logo {
@@ -43,6 +44,10 @@ header div.container {
   font-weight: bold;
   align-self: center;
   color: var(--white);
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .menu-nav {
@@ -117,6 +122,7 @@ header div.container {
 
 .secao-vr {
   display: flex;
+  flex-wrap: wrap;
   margin: 80px 0;
 }
 
@@ -363,4 +369,129 @@ header div.container {
 
 .footer-redes-sociais p {
   color: var(--Dark-Gray);
+}
+
+
+/* Tablets  */
+
+@media only screen and (max-width: 968px) {
+
+  .img-introducao {
+    width: calc(100vw - 0px);
+  }
+
+  .img-vr {
+    flex: 1 1 300px;
+  }
+
+  .desc-vr {
+    flex: 1 1 300px;
+  }
+
+  .desc-vr-area {
+    position: static;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .desc-vr h2 {
+    font-size: 2.25em;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .menu-logo {
+    flex: 1 1 200px;
+    margin: 20px 20px;
+    z-index: 3;
+  }
+
+  .menu-mobile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .menu-mobile img {
+    z-index: 3;
+  }
+  
+  .menu-nav {
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    flex: 1;
+    align-self: flex-end;
+    padding: 10px 0;
+    background-color: var(--Black);
+    transition: .1s;
+  }
+  
+  .menu-ul {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 10px;
+    align-items: flex-start;
+    position: absolute;
+    left: -5000px;
+    text-align: center;
+  }
+  
+  .menu-ul li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+  }
+  
+  .menu-ul li a {
+    display: inline-block;
+    color: var(--Very-Dark-Gray);
+    padding: 10px 15px;
+    font-size: 1.5em;
+    position: relative;
+  }
+
+  .menu-ul li a:hover {
+    color: var(--white)
+  }
+
+  .introducao h1 {
+    font-size: 3em
+  }
+
+  .creations {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .creations-item {
+    flex: 1 1 200px;
+    text-transform: uppercase;
+    height: 400px;
+    margin: 10px 10px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0px -50px 80px 5px black;
+    position: relative;
+  }
+  
+  .creations-item p {
+    font-size: 2em;
+    padding: 20px 20px;
+    color: var(--white);
+  
+  }
+  
+  .grid p {
+    max-width: 200px;
+  }
+  
+
 }
