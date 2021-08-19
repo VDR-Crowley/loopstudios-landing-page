@@ -94,6 +94,7 @@ header div.container {
   position: absolute;
   top: 0;
   z-index: -1;
+  filter: brightness(60%);
 }
 
 .introducao {
@@ -153,6 +154,10 @@ header div.container {
 
 /* seção creations */
 
+.secao-creations {
+  margin: 100px 0 200px;
+}
+
 .desc {
   display: flex;
   justify-content: space-between;
@@ -181,9 +186,181 @@ header div.container {
 }
 
 .creations {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .creations-item {
+  flex: 1 1 200px;
+  text-transform: uppercase;
+  height: 400px;
+  margin: 30px 0px 0 0px;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: inset 0px -50px 80px 5px black;
+  position: relative;
+}
 
+.creations-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .2s;
+}
+
+.creations-item:hover::after {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.creations-item:hover p {
+  color: black;
+  z-index: 5000;
+}
+
+.creations-item p {
+  font-size: 2.25em;
+  padding: 20px 20px;
+  color: var(--white);
+
+}
+
+.earth {
+  background: url('../../images/desktop/image-deep-earth.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.arcade {
+  background: url('../../images/desktop/image-night-arcade.jpg') no-repeat center;
+  background-size: cover;
+  margin-left: 30px;
+}
+
+.soccer {
+  background: url('../../images/desktop/image-soccer-team.jpg') no-repeat center;
+  background-size: cover;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.grid {
+  background: url('../../images/desktop/image-grid.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.grid p {
+  max-width: 150px;
+}
+
+.vr {
+  background: url('../../images/desktop/image-from-above.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.pocket {
+  background: url('../../images/desktop/image-pocket-borealis.jpg') no-repeat center;
+  background-size: cover;
+  margin-left: 30px;
+}
+
+.curiosity {
+  background: url('../../images/desktop/image-curiosity.jpg') no-repeat center;
+  background-size: cover;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.fisheye {
+  background: url('../../images/desktop/image-fisheye.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* footer */
+
+.footer-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  padding: 40px 0;
+}
+
+.footer-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-ul li {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  text-align: center;
+}
+
+.footer-ul li a {
+  display: inline-block;
+  color: var(--white);
+  padding: 10px 30px 0 0;
+  position: relative;
+  font-family: 'Alata', sans-serif;
+}
+
+.footer-ul li a::after {
+  content: "";
+  display: block;
+  margin: 5px auto 0;
+  width: 0%;
+  height: 3px;
+  transition: .1s;
+  background-color: var(--white);
+}
+
+.footer-ul li a:hover::after {
+  width: 70%;
+}
+
+.footer-redes-sociais {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.footer-redes-sociais ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0 19px
+}
+
+.footer-redes-sociais li {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  text-align: center;
+}
+
+.footer-redes-sociais li a {
+  display: inline-block;
+  color: var(--white);
+  padding: 10px 10px 0 0;
+  position: relative;
+  font-family: 'Alata', sans-serif;
+}
+
+.footer-redes-sociais li a::after {
+  content: "";
+  display: block;
+  margin: 5px auto 0;
+  width: 0%;
+  height: 3px;
+  transition: .1s;
+  background-color: var(--white);
+}
+
+.footer-redes-sociais li a:hover::after {
+  width: 70%;
+}
+
+.footer-redes-sociais p {
+  color: var(--Dark-Gray);
 }
