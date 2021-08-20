@@ -397,12 +397,20 @@ header div.container {
   }
 
   .desc-vr h2 {
-    font-size: 2.25em;
     max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .desc-vr p {
+    margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 767px) {
+
+  .container {
+    margin: 0 10px;
+  }
 
   .menu-logo {
     flex: 1 1 200px;
@@ -427,6 +435,7 @@ header div.container {
     height: 100vh;
     position: absolute;
     top: 0;
+    left: 0;
     bottom: 0;
     flex: 1;
     align-self: flex-end;
@@ -466,13 +475,44 @@ header div.container {
     font-size: 3em
   }
 
+  .secao-vr {
+    padding: 80px 0 20px;
+  }
+
+  .desc-vr {
+    text-align: center;
+  }
+
+  .desc-vr h2 {
+    max-width: 500px;
+    font-size: 2.25em;
+    margin: 0 auto 10px;
+  }
+
+  .desc a{
+    position: absolute;
+    bottom: -80px;
+    left: 44%;
+  }
+
+  .desc h1 {
+    margin: 0 auto;
+    font-size: 2em;
+  }
+
+  .secao-creations {
+    margin: 0px 0 200px;
+    position: relative;
+  }
+
   .creations {
     display: flex;
+    flex-wrap: wrap;
     flex-flow: column nowrap;
   }
 
   .creations-item {
-    flex: 1 1 200px;
+    flex: 1 1 150px;
     text-transform: uppercase;
     height: 400px;
     margin: 10px 10px;
@@ -492,6 +532,60 @@ header div.container {
   .grid p {
     max-width: 200px;
   }
-  
 
+  .footer-menu {
+    padding: 40px 0 0;
+  }
+
+  .footer-area {
+    text-align: center;
+    flex-direction: column
+  }
+
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-ul li a {
+    padding: 10px 20px 0;
+  }
+
+  .footer-redes-sociais {
+    align-items: center;
+    padding: 0px 0 30px;
+  }
+
+  .footer-redes-sociais li a {
+    padding: 10px 10px 0;
+  }
+  
+}
+
+@media (max-width: 600px) {
+
+  .introducao h1 {
+    font-size: 2.8em;
+    border-width: 2px;
+  }
+
+  .desc-vr h2 {
+    padding: 40px 0 20px;
+    font-size: 2.25em;
+  }
+
+  .desc-vr p {
+    font-size: 1.5em;
+    padding: 20px 0;
+  }
+
+  .desc a{
+    left: 35%;
+  }
+}
+
+@media (max-width: 355px) {
+  .introducao h1 {
+    font-size: 2.4em;
+  }
 }
