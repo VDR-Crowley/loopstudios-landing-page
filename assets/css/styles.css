@@ -436,6 +436,11 @@ header div.container {
     margin: 0 10px;
   }
 
+  .secao-creations {
+    background: white;
+    padding: 10px 0 0
+  }
+
   .creations {
     display: flex;
     flex-wrap: wrap;
