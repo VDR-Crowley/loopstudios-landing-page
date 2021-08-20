@@ -51,7 +51,7 @@ header div.container {
 }
 
 .menu-nav {
-  flex: 1;
+  flex: 1 1 260px;
   align-self: flex-end;
   padding: 10px 0;
 }
@@ -374,7 +374,7 @@ header div.container {
 
 /* Tablets  */
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1024px) {
 
   .img-introducao {
     width: calc(100vw - 0px);
@@ -392,12 +392,15 @@ header div.container {
     position: static;
     top: 0;
     left: 0;
-    padding: 10px;
+    /*padding: 10px;*/
     margin: 0 auto;
+    height: 100%;
+    width: 100%;
   }
 
   .desc-vr h2 {
     max-width: 500px;
+    font-size: 2em;
     margin: 0 auto;
   }
 
@@ -472,7 +475,7 @@ header div.container {
   }
 
   .introducao h1 {
-    font-size: 3em
+    font-size: 3em;
   }
 
   .secao-vr {
