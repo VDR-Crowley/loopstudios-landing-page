@@ -376,23 +376,39 @@ header div.container {
 
 @media only screen and (max-width: 1024px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+  header div.container {
+    margin: 0 0 0 10px;
+  }
+
   .img-introducao {
     width: calc(100vw - 0px);
+  }
+
+  .introducao h1 {
+    margin: 80px 10px 50px;
   }
 
   .img-vr {
     flex: 1 1 300px;
   }
 
+  img {
+    margin: 0 0 0 10px;
+  }
   .desc-vr {
     flex: 1 1 300px;
+    margin: 0 10px 0 0;
   }
 
   .desc-vr-area {
     position: static;
     top: 0;
     left: 0;
-    /*padding: 10px;*/
+    padding: 40px;
     margin: 0 auto;
     height: 100%;
     width: 100%;
@@ -407,9 +423,45 @@ header div.container {
   .desc-vr p {
     margin: 0 auto;
   }
+
+  .desc h1 {
+    margin: 0 0 0 10px
+  }
+
+  .desc a {
+    margin: 0 10px;
+  }
+
+  .creations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .creations-item {
+    flex: 1 1 250px;
+    text-transform: uppercase;
+    height: 400px;
+    margin: 10px 10px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0px -50px 80px 5px black;
+    position: relative;
+  }
+
+  .creations-item p {
+    padding: 20px 10px;
+  }
+
+  .grid p {
+    max-width: 200px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+
+  .img-introducao {
+    width: calc(100vw - 0px);
+  }
 
   .container {
     margin: 0 10px;
@@ -482,6 +534,14 @@ header div.container {
     padding: 80px 0 20px;
   }
 
+  img {
+    margin: 0 0 0 0px;
+  }
+
+  .desc-vr-area {
+    padding: 10px;
+  }
+
   .desc-vr {
     text-align: center;
   }
@@ -529,7 +589,6 @@ header div.container {
     font-size: 2em;
     padding: 20px 20px;
     color: var(--white);
-  
   }
   
   .grid p {
@@ -583,12 +642,23 @@ header div.container {
   }
 
   .desc a{
-    left: 35%;
+    left: 30%;
+  }
+
+  .desc-vr-area {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 385px) {
+  .introducao h1 {
+    font-size: 2.4em;
   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 340px) {
   .introducao h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
 }
