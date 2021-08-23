@@ -11,6 +11,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="stylesheet" href=" https://unpkg.com/aos@next/dist/aos.css " />
+
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
@@ -38,14 +40,14 @@
   <header>
 
     <div class="container">
-      <h1 class="menu-logo">loopstudios</h1>
+      <h1 class="menu-logo" data-aos="fade-right">loopstudios</h1>
 
       <div class="menu-mobile">
         <img src="./images/icon-hamburger.svg" alt="">
       </div>
 
       <nav class="menu-nav">
-        <ul class="menu-ul">
+        <ul class="menu-ul" data-aos="fade-left">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Events</a></li>
@@ -65,17 +67,17 @@
 
       <section class="introducao">
         <div class="container">
-          <h1>Immersive experiences that deliver</h1>
+          <h1 data-aos="fade-right">Immersive experiences that deliver</h1>
         </div>
       </section>
 
       <section class="secao-vr">
 
-        <div class="img-vr">
+        <div class="img-vr" data-aos="fade-down">
           <img src="./images/desktop/image-interactive.jpg" alt="">
         </div>
 
-        <div class="desc-vr">
+        <div class="desc-vr" data-aos="fade-up">
           <div class="desc-vr-area">
             <h2>The leader in interactive VR</h2>
             <p>
@@ -98,35 +100,35 @@
 
         <div class="creations">
 
-          <a href="#" class="creations-item earth">
+          <a href="#" class="creations-item earth" data-aos="flip-up">
             <p>Deep earth</p>
           </a>
 
-          <a href="#" class="creations-item arcade">
+          <a href="#" class="creations-item arcade" data-aos="flip-up" data-aos-delay="200">
             <p>Night arcade</p>
           </a>
 
-          <a href="#" class="creations-item soccer">
+          <a href=" #" class="creations-item soccer" data-aos="flip-up" data-aos-delay="400">
             <p>Soccer team VR</p>
           </a>
 
-          <a href="#" class="creations-item grid">
+          <a href="#" class="creations-item grid" data-aos="flip-up" data-aos-delay="600">
             <p>The grid</p>
           </a>
 
-          <a href="#" class="creations-item vr">
+          <a href="#" class="creations-item vr" data-aos="flip-up" data-aos-delay="800">
             <p>From up above VR</p>
           </a>
 
-          <a href="#" class="creations-item pocket">
+          <a href="#" class="creations-item pocket" data-aos="flip-up" data-aos-delay="1000">
             <p>Pocket borealis</p>
           </a>
 
-          <a href="#" class="creations-item curiosity">
+          <a href="#" class="creations-item curiosity" data-aos="flip-up" data-aos-delay="1200">
             <p>The curiosity</p>
           </a>
 
-          <a href="#" class="creations-item fisheye">
+          <a href="#" class="creations-item fisheye" data-aos="flip-up" data-aos-delay="1400">
             <p>Make it fisheye</p>
           </a>
 
@@ -176,6 +178,10 @@
   </div>
 
   <script src="./assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
