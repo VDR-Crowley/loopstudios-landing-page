@@ -677,3 +677,19 @@ header div.container {
     font-size: 2.2em;
   }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .img-introducao {
+    width: calc(100vw - 0px);
+  }
+  
+  .introducao h1 {
+    margin: 0;
+  }
+  
+  .menu-nav {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
