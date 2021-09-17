@@ -174,7 +174,7 @@ header div.container {
   text-transform: uppercase;
 }
 
-.desc h1 {
+.desc h2 {
   font-size: 3em;
   font-weight: lighter
 }
@@ -430,7 +430,7 @@ header div.container {
     margin: 0 auto;
   }
 
-  .desc h1 {
+  .desc h2 {
     margin: 0 0 0 10px
   }
 
@@ -573,7 +573,7 @@ header div.container {
     left: 44%;
   }
 
-  .desc h1 {
+  .desc h2 {
     margin: 0 auto;
     font-size: 2em;
   }
